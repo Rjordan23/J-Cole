@@ -77,6 +77,14 @@ body {
     .container {
         display: flex;
         margin: 0 auto;
+      position: relative;
+    }
+    img {
+        position: absolute;
+        width: 20%;
+        right: 20%;
+        top: 10%;
+        opacity: .6;
     }
     p{
       color: #ccc;
@@ -85,6 +93,7 @@ body {
       line-height: 1.8;  
       font-size: .9rem;
       margin: 0 auto;
+      z-index: 1;
     }
     .on-stage {
         max-width: 40%;

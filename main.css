@@ -97,6 +97,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  position: relative;
+}
+
+#bio img {
+  position: absolute;
+  width: 20%;
+  right: 20%;
+  top: 10%;
+  opacity: .6;
 }
 
 #bio p {
@@ -106,6 +115,7 @@ body {
   line-height: 1.8;
   font-size: .9rem;
   margin: 0 auto;
+  z-index: 1;
 }
 
 #bio .on-stage {
