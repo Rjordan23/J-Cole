@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#top-section {
+  position: relative;
+  background-image: url("images/maxresdefault.png");
+  background-size: cover;
+  background-position-y: 30%;
+  height: 100vh;
+  width: 100%;
+}
+
+#top-section #links {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#top-section #links .logo {
+  width: 200px;
+}
+
+#top-section #links .logo img {
+  width: 100%;
+}
+
+#top-section #links nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#top-section #links nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+#top-section #links nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+#signature {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+#signature p {
+  font-size: 8.5rem;
+  font-family: 'Pacifico', cursive;
+}
+
+#hot-track {
+  position: absolute;
+  width: 40%;
+  top: 48%;
+  left: 5%;
+}
+
+#hot-track p {
+  text-align: center;
+  opacity: .6;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+#bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  background: #000;
+}
+
+#bio .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#bio p {
+  color: #ccc;
+  width: 50%;
+  height: 420px;
+  line-height: 1.8;
+  font-size: .9rem;
+  margin: 0 auto;
+}
+
+#bio .on-stage {
+  max-width: 40%;
+  min-width: 40%;
+  height: 100%;
+  background-image: url("images/j.cole.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */
