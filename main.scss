@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+ul , a {
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -79,7 +84,7 @@ body {
     .container {
         display: flex;
         margin: 0 auto;
-      position: relative;
+        position: relative;
     }
     img {
         position: absolute;
@@ -123,6 +128,7 @@ body {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
+        border-radius: 5px;
     }
     .videos {
         background-size: cover;
@@ -143,4 +149,82 @@ body {
             } 
         }
     }
+}
+
+#music {
+    padding: 60px 0;
+    position: relative;
+    background-color: black;
+    .blur-bg {
+        background-image: linear-gradient(45deg, rgba(255,253,60,1) 0%,rgba(176,38,183,0.27) 68%,rgba(125,185,232,0) 100%), url('images/KOD-album-art.jpg');
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        filter: blur(30px) saturate(130%);
+        position: absolute;
+        z-index: 3;
+    }
+    .container {
+        display: flex;
+        padding: 0 50px;
+        position: relative;
+        z-index: 3;
+        .info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title {
+                font-size: 3.4rem;
+                text-align: center;
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+            .sub-title {
+                font-size: 1.3rem;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            #tracks {
+                width: 50%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 10px;
+                margin-bottom: 40px;
+                li {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }   
+            }
+            .logos {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+            } 
+        }
+        .album-cover {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+
+#tour {
+    background: #000000;
+    position: relative;
+    z-index: 4;
+}
+
+footer {
+    background: #1b1b1b;
+    position: relative;
+    z-index: 4;
 }
