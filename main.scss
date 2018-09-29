@@ -43,7 +43,8 @@ body {
               font-weight: 500;
               padding: 0 10px;
            }
-           a:hover {
+           span:hover {
+               padding-bottom: 5px;
                border-bottom: 1px solid #ffffff;
            }
        }
@@ -291,6 +292,10 @@ footer {
                margin-right: 0;
                a {
                  color: #000000;
+               }
+               span:hover {
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid #000000;
                }
            }
        }

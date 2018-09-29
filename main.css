@@ -58,7 +58,8 @@ body {
   padding: 0 10px;
 }
 
-#top-section #links nav a:hover {
+#top-section #links nav span:hover {
+  padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -380,6 +381,10 @@ footer img {
   }
   #top-section #links nav a {
     color: #000000;
+  }
+  #top-section #links nav span:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
   }
 }
 /*# sourceMappingURL=main.css.map */
